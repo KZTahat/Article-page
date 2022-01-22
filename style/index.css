@@ -11,7 +11,7 @@ nav div p{color: white;text-align: center;}
 #leftSecetion{width: 74%;}
 #rightSection{width: 24%;height: 100%;padding-top: 1%;}
 
-/* right section content styling (resources buttons) */
+/* right section content styling (resources buttons and containers) */
 #resourcesContainer{width: 100%;display: flex;margin-bottom: 7px;}
 #resourcesContainer div{padding-bottom: 3px;}
 #resourcesContainer div:first-child{border-bottom: 2px solid gray;}
@@ -27,19 +27,19 @@ nav div p{color: white;text-align: center;}
 #figuresContainer div{margin-bottom: 10px;border-bottom: 2px solid gray;padding-bottom: 10px;}
 
 /* References Container styling */
-#referencesContainer{padding: 1%; display: none;}  /* -------- remove display once done --------- */
+#referencesContainer{padding: 1%; display: none;}
 #referencesContainer section{margin-bottom: 10px;}
 #referencesContainer h4{border-bottom: 1px solid gray;padding-bottom: 5px;margin-bottom: 10px;font-size: 0.9vw; color: gray;}
 #referencesContainer p{font-size: 0.9vw; text-decoration: underline; margin-bottom: 7px;}
 
 /* Related Container styling */
-#relatedContainer{padding: 1%;display: none;}  /* -------- remove display once done --------- */
+#relatedContainer{padding: 1%;display: none;}
 #relatedContainer section{margin-bottom: 10px;}
 #relatedContainer h4{border-bottom: 1px solid gray;padding-bottom: 5px;margin-bottom: 10px;font-size: 0.9vw; color: gray;}
 #relatedContainer p{font-size: 0.9vw; text-decoration: underline; margin-bottom: 7px;}
 
 /* Details Container styling */
-#detailsContainer{padding: 1%;display: none;}  /* -------- remove display once done --------- */
+#detailsContainer{padding: 1%;display: none;}
 #detailsContainer section{margin-bottom: 10px;}
 #detailsContainer h4{border-bottom: 1px solid gray;padding-bottom: 5px;margin-bottom: 10px;font-size: 0.9vw; color: gray;}
 #detailsContainer p{font-size: 0.9vw; text-decoration: underline; margin-bottom: 7px;}
