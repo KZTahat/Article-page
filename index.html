@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/assets/profile.svg">
+    <link rel="icon" type="image/x-icon" href="/assets/profile.svg" />
     <link rel="stylesheet" href="/style/reset.css" />
     <link rel="stylesheet" href="/style/index.css" />
     <title>Article page</title>
   </head>
   <body>
-    <header>
+    <section id="xsmall_screen_resourceContent">
+      <a href="#" id="backBtn"> < Back</a>
+      <hr />
+      <section id="appendingSection"></section>
+    </section>
+    <header id="header">
       <nav>
         <div><p>LOGO</p></div>
       </nav>
@@ -21,7 +26,36 @@
         <!-- in this part we will define the middel part of the screen to contain our content -->
         <!-- then splitting into two sections ( left and right sections ) -->
         <!-- one for the articles and the text and one for the resources -->
-        <section id="leftSecetion" class="contentSections"></section>
+        <section id="leftSecetion" class="contentSections">
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            nesciunt commodi quaerat.
+          </h1>
+          <span><a href="#">Author 1</a>, </span>
+          <span><a href="#"> Author 2</a>, </span>
+          <span><a href="#"> Author 3</a></span>
+          <article>
+            <h3 class="headLines">Abstract</h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At magnam
+            voluptate deleniti fuga neque architecto voluptates quod doloribus,
+            error magni, totam ipsam! Nihil, <a href="#">neque</a> doloribus! At
+            tempora veniam consequuntur sed?Lorem ipsum dolor sit.
+          </article>
+          <article>
+            <h3 class="headLines">Introduction</h3>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+            voluptas, eaque obcaecati quasi iure, esse at, eius modi id
+            provident libero rerum reprehenderit fugiat beatae ipsa. Optio
+            recusandae quod temporibus, Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Eius est maiores perspiciatis minima et iste
+            eligendi, fugiat dicta, explicabo quam, ad ea dolor nesciunt saepe
+            mollitia veniam tempora porro repudiandae. Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Cupiditate culpa at
+            reprehenderit ratione error tempore rem atque inventore quasi quos
+            officia recusandae illum eos enim fugit molestiae deleniti, commodi
+            aut.
+          </article>
+        </section>
         <section id="rightSection" class="contentSections">
           <!-- the Right Section  -->
           <!-- contains (figures, references, related links and details) -->
@@ -44,114 +78,118 @@
               <p>Details</p>
             </div>
           </div>
-          <div id="figuresContainer" class="recourceContent">
-            <!-- figures section -->
-            <!-- this div contains the content of the figures section -->
-            <!-- this is the defualt section -->
-            <div>
-              <img src="/assets//figure1.jpg" alt="figure1" />
-              <span>
-                <strong>Fig1:</strong> Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Mollitia itaque perferendis veritatis odit ea
-                eum quibusdam asperiores
-              </span>
+          <section id="insideSection">
+            <div id="figuresContainer" class="recourceContent">
+              <!-- figures section -->
+              <!-- this div contains the content of the figures section -->
+              <!-- this is the defualt section on larg screens and hidden on xsmall screens-->
+              <div>
+                <img src="/assets//figure1.jpg" alt="figure1" />
+                <span>
+                  <strong>Fig1:</strong> Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Mollitia itaque perferendis veritatis odit
+                  ea eum quibusdam asperiores
+                </span>
+              </div>
+              <div>
+                <img src="/assets//figure2.jpg" alt="figure2" />
+                <span>
+                  <strong>Fig2:</strong> Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Mollitia itaque perferendis veritatis odit
+                  ea eum quibusdam asperiores
+                </span>
+              </div>
+              <div>
+                <img src="/assets//figure3.png" alt="figure3" />
+                <span>
+                  <strong>Fig3:</strong> Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Mollitia itaque perferendis veritatis odit
+                  ea eum quibusdam asperiores
+                </span>
+              </div>
             </div>
-            <div>
-              <img src="/assets//figure2.jpg" alt="figure2" />
-              <span>
-                <strong>Fig2:</strong> Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Mollitia itaque perferendis veritatis odit ea
-                eum quibusdam asperiores
-              </span>
+            <div id="referencesContainer" class="recourceContent">
+              <!-- References section -->
+              <!-- this div contains the References of the References section -->
+              <!-- this section will be displayed when references tap is clicked -->
+              <section>
+                <h4>Lorem</h4>
+                <p>Optio minima exercitationem.</p>
+                <p>Voluptates corrupti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Voluptates corrupti.</p>
+              </section>
+              <section>
+                <h4>Lorem</h4>
+                <p>Optio minima exercitationem.</p>
+                <p>Voluptates corrupti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Voluptates corrupti.</p>
+              </section>
             </div>
-            <div>
-              <img src="/assets//figure3.png" alt="figure3" />
-              <span>
-                <strong>Fig3:</strong> Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Mollitia itaque perferendis veritatis odit ea
-                eum quibusdam asperiores
-              </span>
+            <div id="relatedContainer" class="recourceContent">
+              <!-- Related section -->
+              <!-- this div contains the Related links of the Related section -->
+              <!-- this section will be displayed when Related tap is clicked -->
+              <section>
+                <h4>Title</h4>
+                <p>Optio minima exercitationem consectetur.</p>
+                <p>Voluptates amet corrupti ipsum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Voluptates ipsum corrupti.</p>
+              </section>
+              <section>
+                <h4>Title</h4>
+                <p>Optio minima exercitationem.</p>
+                <p>Voluptates amet corrupti.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing minima
+                  elit.
+                </p>
+                <p>Voluptates corrupti.</p>
+              </section>
+              <section>
+                <h4>Competing Intrests</h4>
+                <p>Optio minima exercitationem amet.</p>
+                <p>Voluptates corrupti.minima</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Voluptates corrupti.minima</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Voluptates corrupti.minima</p>
+              </section>
             </div>
-          </div>
-          <div id="referencesContainer" class="recourceContent">
-            <!-- References section -->
-            <!-- this div contains the References of the References section -->
-            <!-- this section will be displayed when references tap is clicked -->
-            <section>
-              <h4>Lorem</h4>
-              <p>Optio minima exercitationem.</p>
-              <p>Voluptates corrupti.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Voluptates corrupti.</p>
-            </section>
-            <section>
-              <h4>Lorem</h4>
-              <p>Optio minima exercitationem.</p>
-              <p>Voluptates corrupti.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Voluptates corrupti.</p>
-            </section>
-          </div>
-          <div id="relatedContainer" class="recourceContent">
-            <!-- Related section -->
-            <!-- this div contains the Related links of the Related section -->
-            <!-- this section will be displayed when Related tap is clicked -->
-            <section>
-              <h4>Title</h4>
-              <p>Optio minima exercitationem consectetur.</p>
-              <p>Voluptates amet corrupti ipsum.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Voluptates ipsum corrupti.</p>
-            </section>
-            <section>
-              <h4>Title</h4>
-              <p>Optio minima exercitationem.</p>
-              <p>Voluptates amet corrupti.</p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing minima elit.
-              </p>
-              <p>Voluptates corrupti.</p>
-            </section>
-            <section>
-              <h4>Competing Intrests</h4>
-              <p>Optio minima exercitationem amet.</p>
-              <p>Voluptates corrupti.minima</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Voluptates corrupti.minima</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Voluptates corrupti.minima</p>
-            </section>
-          </div>
-          <div id="detailsContainer" class="recourceContent">
-            <!-- Details section -->
-            <!-- this div contains the Details links of the Details section -->
-            <!-- this section will be displayed when Details tap is clicked -->
-            <section>
-              <h4>Lorem</h4>
-              <p>Voluptates amet corrupti ipsum.</p>
-              <p>Voluptates ipsum corrupti.</p>
-              <p>Optio minima exercitationem consectetur.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </section>
-            <section>
-              <h4>Lorem</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing minima elit.
-              </p>
-              <p>Optio minima exercitationem.</p>
-              <p>Voluptates amet corrupti.</p>
-              <p>Voluptates corrupti.</p>
-            </section>
-            <section>
-              <h4>Lorem</h4>
-              <p>Voluptates corrupti.minima</p>
-              <p>Voluptates corrupti.minima</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p>Optio minima exercitationem amet.</p>
-              <p>Voluptates corrupti.minima</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </section>
-          </div>
+            <div id="detailsContainer" class="recourceContent">
+              <!-- Details section -->
+              <!-- this div contains the Details links of the Details section -->
+              <!-- this section will be displayed when Details tap is clicked -->
+              <section>
+                <h4>Lorem</h4>
+                <p>Voluptates amet corrupti ipsum.</p>
+                <p>Voluptates ipsum corrupti.</p>
+                <p>Optio minima exercitationem consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </section>
+              <section>
+                <h4>Lorem</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing minima
+                  elit.
+                </p>
+                <p>Optio minima exercitationem.</p>
+                <p>Voluptates amet corrupti.</p>
+                <p>Voluptates corrupti.</p>
+              </section>
+              <section>
+                <h4>Lorem</h4>
+                <p>Voluptates corrupti.minima</p>
+                <p>Voluptates corrupti.minima</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Optio minima exercitationem amet.</p>
+                <p>Voluptates corrupti.minima</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </section>
+            </div>
+          </section>
         </section>
       </div>
     </main>

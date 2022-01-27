@@ -1,24 +1,77 @@
 /* Index page styling */
 
-@media (min-width: 600px){
-    nav{width: 100%;border-bottom: 2px solid gray;}
-    /* nav Bar style */
-    nav div{margin: 0.5%; width: 10%;overflow: hidden;background-color: rgb(71, 69, 69);min-width: fit-content;padding: 1%;}
-    nav div p{color: white;text-align: center;}
+body{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
 
+/* Xsmall screens styling */
+/* nav Bar style */
+nav{width: 100%;border-bottom: 2px solid gray;}
+nav div{margin: 0.5%; width: 10%;overflow: hidden;background-color: rgb(71, 69, 69);min-width: fit-content;padding: 1%;}
+nav div p{color: white;text-align: center;}
+
+/* styling the back button */
+#xsmall_screen_resourceContent{width: 100%;}
+#xsmall_screen_resourceContent a{text-decoration: none;color: rgb(71, 69, 69); font-size: 5vw; margin: 3%;}
+
+/* main page styling */
+#resourcesContainer {right: 0px;text-align: center;}
+#leftSecetion{width: 100%;inline-size: 90%;padding: 2%;}
+#leftSecetion h1{font-size: 5vw;margin-bottom: 5%;}
+#leftSecetion a{font-size: 3vw;color: #0019fc; }
+.headLines{font-size: 4vw; margin-bottom: 5.5%; margin-top: 5.5%;color: rgb(20, 18, 18);}
+#leftSecetion article{font-size: 3vw;margin-bottom: 5%;}
+
+/* right section styling  */
+#rightSection{width: 9%;float: right;position: absolute;top: 35px;right: 0px;}
+.resourcesButtons p{display: none;}
+.resourcesButtons img{width: 45%;margin-top: 13px;margin-bottom: 5px;}
+
+/* figuers Container styling */
+#figuresContainer{padding: 1%;}
+#figuresContainer p{font-size: 9vw;}
+#figuresContainer p strong{font-weight: bold;}
+#figuresContainer img{width: 100%; margin-bottom: 7px;}
+#figuresContainer div{margin-bottom: 10px;border-bottom: 2px solid gray;padding-bottom: 10px;}
+
+/* resources containers styling */
+.recourceContent{padding: 3%; display: none;}
+.recourceContent span{font-size: 4vw;}
+.recourceContent span strong{font-weight: bold;}
+.recourceContent img{width: 100%; margin-bottom: 7px;}
+.recourceContent div{margin-bottom: 10px;border-bottom: 2px solid gray;padding-bottom: 10px;}
+.recourceContent section {margin-bottom: 10px;}
+.recourceContent h4{border-bottom: 1px solid gray;padding-bottom: 5px;margin-bottom: 10px;font-size: 5vw; color: gray;}
+.recourceContent p{font-size: 3vw; text-decoration: underline; margin-bottom: 10px;}
+
+/* large screens styling */
+@media screen and (min-width:600px) {
     /* main page styling ( sections layout) */
+    #leftSecetion{width: 72%;padding: 2%;}
+    #leftSecetion h1{font-size: 2vw;margin-bottom: 5%;}
+    #leftSecetion a{font-size: 1vw;color: #0019fc; }
+    .headLines{font-size: 2vw; margin-bottom: 5.5%; margin-top: 5.5%;color: rgb(20, 18, 18);}
+    #leftSecetion article{font-size: 1vw;margin-bottom: 5%;}
+
+    /* sections layout */
     #mainContent{margin: auto;width: 50%;}
     .contentSections{display: inline-block;}
-    #leftSecetion{width: 74%;}
-    #rightSection{width: 24%;height: 100%;padding-top: 1%;}
+    #rightSection{width: 24%;height: 100%;padding-top: 1%;position: relative;text-align: left;margin-top: -40px;}
+    #insideSection{overflow: auto;}
+    .resourcesButtons p{font-size: 0.7vw;display: inline-block;}
+    .resourcesButtons img{width: 35%;}
 
     /* right section content styling (resources buttons and containers) */
-    #resourcesContainer{width: 100%;display: flex;margin-bottom: 7px;}
+    #resourcesContainer{width: 100%;display: flex;margin-bottom: 7px;text-align: center;right: 0px;}
+    #resourcesContainer p{font-size: 0.6vw;}
     #resourcesContainer div{padding-bottom: 3px;}
     #resourcesContainer div:first-child{border-bottom: 2px solid gray;}
     .resourcesButtons{display: inline-block;width: 25%;text-align: center;cursor: default;flex: 1;cursor: pointer;}
-    .resourcesButtons p{font-size: 0.7vw;}
-    .resourcesButtons img{width: 35%;}
+
+    /* figuers Container styling */
+    #figuresContainer{padding: 1%;}
+    #figuresContainer p{font-size: 9vw;}
+    #figuresContainer p strong{font-weight: bold;}
+    #figuresContainer img{width: 100%; margin-bottom: 7px;}
+    #figuresContainer div{margin-bottom: 10px;border-bottom: 2px solid gray;padding-bottom: 10px;}
 
     /* resources containers styling */
     .recourceContent{padding: 1%; display: none;}
@@ -27,9 +80,9 @@
     .recourceContent img{width: 100%; margin-bottom: 7px;}
     .recourceContent div{margin-bottom: 10px;border-bottom: 2px solid gray;padding-bottom: 10px;}
     .recourceContent section {margin-bottom: 10px;}
-    .recourceContent h4{border-bottom: 1px solid gray;padding-bottom: 5px;margin-bottom: 10px;font-size: 0.9vw; color: gray;}
-    .recourceContent p{font-size: 0.9vw; text-decoration: underline; margin-bottom: 7px;}
+    .recourceContent h4{border-bottom: 1px solid gray;padding-bottom: 5px;margin-bottom: 10px;font-size: 0.8vw; color: gray;}
+    .recourceContent p{font-size: 0.8vw; text-decoration: underline; margin-bottom: 7px;}
 
     /* figuers Container defualt display */
-    #figuresContainer{display: inline-block;}
+    #figuresContainer{display: block;}
 }
