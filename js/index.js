@@ -10,12 +10,12 @@ let xsmallScreensSection = document.getElementById(
   "xsmall_screen_resourceContent"
 );
 xsmallScreensSection.style.display = "none";
-// selecting the main content
+// selecting the main content and the header
 let mainContent = document.getElementById("mainContent");
 let header = document.getElementById("header");
 
-// 
-let appendingSection = document.getElementById('appendingSection');
+// getting the section where to append the content on xsmall screens
+let appendingSection = document.getElementById("appendingSection");
 
 // traversing the taps to add event listeners on clicking
 taps.forEach((element, tapNumber) => {
@@ -26,12 +26,14 @@ taps.forEach((element, tapNumber) => {
     for (let index = 0; index < resourcesContainers.length; index++) {
       if (index == tapNumber) {
         if (windowInnerWidth > 600) {
+          // large screens
           // when the clicked taps index is the same of the container index display the container
           // and display a border bottom to teh tap itself
           xsmallScreensSection.innerHTML = "";
           resourcesContainers[index].style.display = "inline-block";
           taps[index].style.borderBottom = "2px solid gray";
         } else {
+          // xsmall screens
           appendingSection.append(resourcesContainers[index]);
           resourcesContainers[index].style.display = "inline-block";
           xsmallScreensSection.style.display = "inline-block";
@@ -47,6 +49,7 @@ taps.forEach((element, tapNumber) => {
   });
 });
 
+// adding event listener to the back button on xsmall screens only
 let backBtn = document.getElementById("backBtn");
 backBtn.addEventListener("click", () => {
   xsmallScreensSection.style.display = "none";

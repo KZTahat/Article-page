@@ -5,8 +5,8 @@ body{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
 /* Xsmall screens styling */
 /* nav Bar style */
 nav{width: 100%;border-bottom: 2px solid gray;}
-nav div{margin: 0.5%; width: 10%;overflow: hidden;background-color: rgb(71, 69, 69);min-width: fit-content;padding: 1%;}
-nav div p{color: white;text-align: center;}
+nav figure{margin: 0.5%; width: 10%;overflow: hidden;background-color: rgb(71, 69, 69);min-width: fit-content;padding: 1%;}
+nav figure p{color: white;text-align: center;}
 
 /* styling the back button */
 #xsmall_screen_resourceContent{width: 100%;}
@@ -18,26 +18,26 @@ nav div p{color: white;text-align: center;}
 #leftSecetion h1{font-size: 5vw;margin-bottom: 5%;}
 #leftSecetion a{font-size: 3vw;color: #0019fc; }
 .headLines{font-size: 4vw; margin-bottom: 5.5%; margin-top: 5.5%;color: rgb(20, 18, 18);}
-#leftSecetion article{font-size: 3vw;margin-bottom: 5%;}
+#leftSecetion article{font-size: 3vw;margin-bottom: 5%;line-height: 200%;}
 
 /* right section styling  */
 #rightSection{width: 9%;float: right;position: absolute;top: 35px;right: 0px;}
-.resourcesButtons p{display: none;}
+.resourcesButtons figcaption{display: none;}
 .resourcesButtons img{width: 45%;margin-top: 13px;margin-bottom: 5px;}
 
 /* figuers Container styling */
 #figuresContainer{padding: 1%;}
-#figuresContainer p{font-size: 9vw;}
-#figuresContainer p strong{font-weight: bold;}
-#figuresContainer img{width: 100%; margin-bottom: 7px;}
-#figuresContainer div{margin-bottom: 10px;border-bottom: 2px solid gray;padding-bottom: 10px;}
+#figuresContainer figcaption{font-size: 4vw;}
+#figuresContainer strong{font-weight: bold;}
+#figuresContainer img{width: 100%; margin-bottom: 15px;}
+#figuresContainer figure{margin-bottom: 10px;border-bottom: 2px solid gray;padding-bottom: 10px;}
 
 /* resources containers styling */
 .recourceContent{padding: 3%; display: none;}
 .recourceContent span{font-size: 4vw;}
 .recourceContent span strong{font-weight: bold;}
 .recourceContent img{width: 100%; margin-bottom: 7px;}
-.recourceContent div{margin-bottom: 10px;border-bottom: 2px solid gray;padding-bottom: 10px;}
+.recourceContent section{margin-bottom: 10px;padding-bottom: 10px;}
 .recourceContent section {margin-bottom: 10px;}
 .recourceContent h4{border-bottom: 1px solid gray;padding-bottom: 5px;margin-bottom: 10px;font-size: 5vw; color: gray;}
 .recourceContent p{font-size: 3vw; text-decoration: underline; margin-bottom: 10px;}
@@ -46,10 +46,10 @@ nav div p{color: white;text-align: center;}
 @media screen and (min-width:600px) {
     /* main page styling ( sections layout) */
     #leftSecetion{width: 72%;padding: 2%;}
-    #leftSecetion h1{font-size: 2vw;margin-bottom: 5%;}
+    #leftSecetion h1{font-size: 1.5vw;margin-bottom: 5%;font-weight: bold;}
     #leftSecetion a{font-size: 1vw;color: #0019fc; }
-    .headLines{font-size: 2vw; margin-bottom: 5.5%; margin-top: 5.5%;color: rgb(20, 18, 18);}
-    #leftSecetion article{font-size: 1vw;margin-bottom: 5%;}
+    .headLines{font-size: 1vw; margin-bottom: 5.5%; margin-top: 5.5%;color: rgb(20, 18, 18);font-weight: bold;}
+    #leftSecetion article{font-size: 1vw;margin-bottom: 5%;line-height: 200%;}
 
     /* sections layout */
     #mainContent{margin: auto;width: 50%;}
@@ -61,24 +61,24 @@ nav div p{color: white;text-align: center;}
 
     /* right section content styling (resources buttons and containers) */
     #resourcesContainer{width: 100%;display: flex;margin-bottom: 7px;text-align: center;right: 0px;}
-    #resourcesContainer p{font-size: 0.6vw;}
-    #resourcesContainer div{padding-bottom: 3px;}
-    #resourcesContainer div:first-child{border-bottom: 2px solid gray;}
+    #resourcesContainer figcaption{font-size: 0.6vw;display: block;}
+    #resourcesContainer figure{padding-bottom: 3px;}
+    #resourcesContainer figure:first-child{border-bottom: 2px solid gray;}
     .resourcesButtons{display: inline-block;width: 25%;text-align: center;cursor: default;flex: 1;cursor: pointer;}
 
     /* figuers Container styling */
     #figuresContainer{padding: 1%;}
-    #figuresContainer p{font-size: 9vw;}
-    #figuresContainer p strong{font-weight: bold;}
+    #figuresContainer figcaption{font-size: 0.8vw;}
+    #figuresContainer strong{font-weight: bold;}
     #figuresContainer img{width: 100%; margin-bottom: 7px;}
-    #figuresContainer div{margin-bottom: 10px;border-bottom: 2px solid gray;padding-bottom: 10px;}
+    #figuresContainer figure{margin-bottom: 10px;border-bottom: 2px solid gray;padding-bottom: 10px;}
 
     /* resources containers styling */
     .recourceContent{padding: 1%; display: none;}
     .recourceContent span{font-size: 0.8vw;}
     .recourceContent span strong{font-weight: bold;}
     .recourceContent img{width: 100%; margin-bottom: 7px;}
-    .recourceContent div{margin-bottom: 10px;border-bottom: 2px solid gray;padding-bottom: 10px;}
+    .recourceContent section{margin-bottom: 10px;padding-bottom: 10px;}
     .recourceContent section {margin-bottom: 10px;}
     .recourceContent h4{border-bottom: 1px solid gray;padding-bottom: 5px;margin-bottom: 10px;font-size: 0.8vw; color: gray;}
     .recourceContent p{font-size: 0.8vw; text-decoration: underline; margin-bottom: 7px;}
