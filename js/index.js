@@ -12,6 +12,7 @@ let xsmallScreensSection = document.getElementById(
 xsmallScreensSection.style.display = "none";
 // selecting the main content and the header
 let mainContent = document.getElementById("mainContent");
+
 let header = document.getElementById("header");
 
 // getting the section where to append the content on xsmall screens
